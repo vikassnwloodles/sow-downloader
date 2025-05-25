@@ -15,8 +15,7 @@ class SowController extends Controller
     public function download()
     {
         $fastApiUrl = 'http://localhost:8000/download-sow';
-        # $webhookSecret = config('services.fastapi.webhook_secret'); // e.g. in .env
-        $webhookSecret = '7ztkuXXzKqebTOVWCdnAvmQ-qCLr9bqH4Lfuw_wmN_s';
+        $webhookSecret = config('services.fastapi.webhook_secret'); // e.g. in .env
     
         $uuid = '36a8d6f9-fcb3-40a8-8f94-6f8777d01627';  // You can generate or get this dynamically
     
